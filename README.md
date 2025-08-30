@@ -1,4 +1,4 @@
-# Unique Patel – 3D Portfolio (React + TypeScript + Vite)
+# Unique Patel – 3D Portfolio
 
 A responsive developer portfolio with a real 3D scene (Three.js via **@react-three/fiber**/**@react-three/drei**), light/dark theme toggle, mobile menu, project cards, education/experience sections and a **one-click PDF résumé download**. Skill badges link to official documentation.
 
