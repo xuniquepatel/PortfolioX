@@ -206,5 +206,3 @@ Open `src/App.tsx` and update the `DATA` object:
 - `projects`, `experience`, `education`, etc.
 
 ---
-
-## License
