@@ -1,6 +1,6 @@
-# Unique Patel – 3D Portfolio (React + TypeScript + Vite)
+# Unique Patel – 3D Portfolio
 
-A responsive developer portfolio with a real 3D scene (Three.js via **@react-three/fiber**/**@react-three/drei**), light/dark theme toggle, mobile menu, project cards, education/experience sections, and a **one-click PDF résumé download**. Skill badges link to official documentation.
+A responsive developer portfolio with a real 3D scene (Three.js via **@react-three/fiber**/**@react-three/drei**), light/dark theme toggle, mobile menu, project cards, education/experience sections and a **one-click PDF résumé download**. Skill badges link to official documentation.
 
 ## Features
 - Animated Three.js scene (icosahedron + starfield)
@@ -112,7 +112,7 @@ export default { plugins: { tailwindcss: {}, autoprefixer: {} } };
 1. Push this repo to GitHub.
 2. On vercel.com → **New Project** → Import your repo.
 3. Framework: **Vite** · Build: `vite build` · Output: `dist`.
-4. Deploy. Résumé will be at `https://<project>.vercel.app/Unique_Patel_Resume.pdf`.
+4. Deploy. Résumé will be at `https://portfoliox.vercel.app/Unique_Patel_Resume.pdf`.
 
 ### Option B — GitHub Pages (gh-pages branch)
 1. Set **base** to your repo name in `vite.config.ts`:
@@ -122,7 +122,7 @@ export default { plugins: { tailwindcss: {}, autoprefixer: {} } };
 
    export default defineConfig({
      plugins: [react()],
-     base: "/<your-repo-name>/"
+     base: "/xuniquepatel>/"
    });
    ```
 2. Deploy:
@@ -130,8 +130,8 @@ export default { plugins: { tailwindcss: {}, autoprefixer: {} } };
    npm run deploy
    ```
 3. GitHub → **Settings → Pages** → Source: `gh-pages` / `(root)`.
-4. Site URL: `https://<username>.github.io/<your-repo-name>/`  
-   Résumé URL: `https://<username>.github.io/<your-repo-name>/Unique_Patel_Resume.pdf`.
+4. Site URL: `https://xuniquepatel.github.io/portfolioX/`  
+   Résumé URL: `https://xuniquepatel.github.io/portfolioX/Unique_Patel_Resume.pdf`.
 
 **SPA fallback (optional):**
 ```bash
@@ -206,6 +206,3 @@ Open `src/App.tsx` and update the `DATA` object:
 - `projects`, `experience`, `education`, etc.
 
 ---
-
-## License
-MIT (or choose your own and update this section)
