@@ -26,7 +26,6 @@ React 18 · TypeScript · Vite 5 · Tailwind CSS 3 · Three.js · @react-three/f
 npm i
 npm run dev
 ```
-Open http://localhost:5173/
 
 ---
 
