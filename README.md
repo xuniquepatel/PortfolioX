@@ -174,7 +174,6 @@ if (Test-Path .\\node_modules) { Remove-Item -Recurse -Force .\\node_modules }
 if (Test-Path .\\package-lock.json) { Remove-Item -Force .\\package-lock.json }
 npm cache verify
 npm i
----
 
 ## Editing Content
 
@@ -182,5 +181,3 @@ Open `src/App.tsx` and update the `DATA` object:
 - `email`, social links
 - `skills` array (name + official docs URL)
 - `projects`, `experience`, `education`, etc.
-
----
