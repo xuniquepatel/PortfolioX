@@ -184,7 +184,6 @@ const DATA = {
       name: "Bootstrap 5",
       url: "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
     },
-    { name: "Tailwind CSS", url: "https://tailwindcss.com/docs" },
     { name: "LangChain", url: "https://js.langchain.com/docs/" },
     { name: "Git", url: "https://git-scm.com/doc" },
     { name: "Postman", url: "https://learning.postman.com/docs/" },
@@ -206,9 +205,9 @@ const DATA = {
       period: "Dec 2023 – Jun 2024",
       location: "Vadodara, Gujarat",
       points: [
-        "Improved Innrly’s interface for clarity and speed.",
-        "Built responsive modules with Angular and Bootstrap.",
-        "Fixed UI bugs and supported feature updates.",
+        "Built and refined responsive UI flows in Angular + Bootstrap for a real-time hospitality accounting platform (Innrly).",
+        "Implemented role-based access controls to secure sensitive actions and simplify user pathways.",
+        "Reduced UI friction by fixing front-end bugs, tightening validation and improving empty/error states.",
       ],
     },
   ],
@@ -222,7 +221,7 @@ const DATA = {
     },
     {
       school: "The Maharaja Sayajirao University of Baroda",
-      degree: "B.E.",
+      degree: "B.E. in Computer Science and Engineering",
       score: "CGPA: 8.95",
       period: "2020 – 2024",
       location: "Vadodara, Gujarat",
@@ -230,30 +229,35 @@ const DATA = {
   ],
   projects: [
     {
-      name: "NeuroCanvas Infinity",
+      name: "NeuroCanvas",
       stack: [
-        "React",
-        "Node",
-        "Express",
+        "React.js",
+        "Node.js",
+        "Express.js",
         "PostgreSQL",
         "Cloudinary",
         "Clerk",
         "Google Gemini API",
       ],
-      desc: "A simple workspace to create blog titles, edit images, and review résumés. Clean UI, easy navigation, and subscription features.",
-      href: "https://github.com/xuniquepatel/NeuroCanvas-Infinity",
+      desc:
+        "A subscription-ready, AI-assisted workspace that unifies content and image utilities into one simple dashboard. " +
+        "Generate blog titles, draft articles, create images and remove backgrounds/objects without jumping across tools. " +
+        "Built with clean navigation and room to grow premium features.",
+      href: "https://github.com/xuniquepatel/NeuroCanvas",
     },
     {
-      name: "Queue Pilot",
-      stack: ["Python", "Flask", "Redis"],
-      desc: "A small task-queue service with worker status, retries, and a live dashboard for health and progress.",
-      href: "https://github.com/xuniquepatel/Queue-Pilot",
+      name: "TaskSentinel",
+      stack: ["Python", "Flask", "Redis", "RESTful API"],
+      desc:
+        "A compact, fault-tolerant task-queue service with worker heartbeats, retries with backoff and a live dashboard for visibility. " +
+        "Designed for graceful recovery and smooth back-pressure using Redis as the coordination layer, so work gets done even when processes wobble.",
+      href: "https://github.com/xuniquepatel/TaskSentinel",
     },
   ],
   achievements: [
-    "INSPIRE Scholarship (Top 1% in Class XII, DST, GoI)",
-    "Graduate Rotational Internship Program – The Sparks Foundation",
+    "INSPIRE Scholarship by DST (Top 1% in Class XII)",
     "Top-ranked Geek at MSU Baroda on GeeksforGeeks",
+    "Secured a 1400+ competitive-programming rating across LeetCode, CodeChef and GFG",
   ],
   certificates: [
     "LLM Engineering: Master AI, LLMs & Agents – Udemy (2025)",
@@ -267,8 +271,9 @@ const DATA = {
       role: "Internshala Student Partner (ISP 31)",
       period: "Oct 2022 – Nov 2022",
       details: [
-        "Helped students find internships and resources.",
-        "Contributed to the “Light a Diya” registrations drive.",
+        "Led campus outreach for Internshala ISP-31 at MSU Baroda.",
+        "Promoted the ‘Light a Diya’ campaign, improved sign-up conversions with clear FAQs.",
+        "Recognized with a Victory Certificate for measurable participation and program visibility.",
       ],
     },
   ],
@@ -286,7 +291,7 @@ function Section({ id, title, kicker, children }: SectionProps) {
     <section id={id} className="mx-auto w-full max-w-6xl px-6 py-16 sm:py-20">
       <div className="mb-8">
         {kicker && (
-          <p className="text-xs uppercase tracking-widest text-slate-500 dark:text-white/60">
+          <p className="text-xs uppercase tracking-widest text-slate-500 dark:text:white/60 dark:text-white/60">
             {kicker}
           </p>
         )}
@@ -397,7 +402,7 @@ export default function Portfolio3D() {
               <a
                 key={id}
                 href={`#${id}`}
-                className="rounded-full px-3 py-1.5 text-slate-700 hover:bg-slate-100 dark:text-white/80 hover:dark:bg-white/10"
+                className="rounded-full px-3 py-1.5 text-slate-700 hover:bg-slate-100 dark:text-white/80 hover:dark:bg:white/10 hover:dark:bg-white/10"
               >
                 {label}
               </a>
@@ -483,7 +488,7 @@ export default function Portfolio3D() {
             onClick={downloadResume}
             className="bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-black hover:dark:bg-white/90"
           >
-            <FileDown className="h-4 w-4" /> Download Résumé
+            <FileDown className="h-4 w-4" /> Download Resume
           </Button>
 
           <ButtonLink
@@ -507,11 +512,16 @@ export default function Portfolio3D() {
       {/* About */}
       <Section id="about" title="About" kicker="Overview">
         <Card>
-          <p className="leading-relaxed text-slate-800 dark:text-white/85">
-            I build useful web apps from start to finish. On the front end I use
-            React and Tailwind to ship clean, fast interfaces. On the back end I
-            keep things simple with Node and Express. I like readable code,
-            quick feedback, and features that help people.
+          <p className="leading-relaxed text-slate-800 dark:text-white/85 whitespace-pre-line">
+            I’m an M.Tech student in ICT - Software Systems at Dhirubhai Ambani
+            University, Gandhinagar with a B.E. in Computer Science from The
+            Maharaja Sayajirao University of Baroda, Vadodara. Interests include
+            Full Stack Development, GenAI and Large Language Models that are
+            transforming how code and intelligence connect. I’m drawn to
+            challenges that resist simple solutions, from competitive
+            programming puzzles to hands-on exploration with emerging tools.
+            Always looking for opportunities where software, scale and
+            imagination come together to build what’s next.
           </p>
         </Card>
       </Section>
@@ -615,7 +625,7 @@ export default function Portfolio3D() {
                 <GraduationCap className="mt-1 h-6 w-6 opacity-80" />
                 <div>
                   <h3 className="text-lg font-semibold">{ed.school}</h3>
-                  <p className="text-sm text-slate-700 dark:text-white/80">
+                  <p className="text-sm text-slate-700 dark:text:white/80 dark:text-white/80">
                     {ed.degree} · {ed.score}
                   </p>
                   <p className="text-xs text-slate-500 dark:text-white/60">
@@ -724,7 +734,7 @@ export default function Portfolio3D() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-6 sm:flex-row">
           <p className="text-xs text-slate-600 dark:text-white/60">
             © {new Date().getFullYear()} {DATA.name}. Built with React,
-            Tailwind, and a sprinkle of three.js.
+            Tailwind and a sprinkle of three.js.
           </p>
           <div className="flex items-center gap-3">
             <a

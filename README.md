@@ -1,6 +1,6 @@
 # Unique Patel – 3D Portfolio
 
-Developer portfolio with a real 3D scene (Three.js via **@react-three/fiber**/**@react-three/drei**), light/dark theme toggle, mobile menu, project cards, education/experience sections and a **one-click PDF résumé download**. Skill badges link to official documentation.
+Developer portfolio with a real 3D scene (Three.js via **@react-three/fiber**/**@react-three/drei**), light/dark theme toggle, mobile menu, project cards, education/experience sections and a **one-click PDF resume download**. Skill badges link to official documentation.
 
 ## Features
 - Animated Three.js scene (icosahedron + starfield)
