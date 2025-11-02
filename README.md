@@ -1,14 +1,14 @@
 # Unique Patel – 3D Portfolio
 
-A responsive developer portfolio with a real 3D scene (Three.js via **@react-three/fiber**/**@react-three/drei**), light/dark theme toggle, mobile menu, project cards, education/experience sections and a **one-click PDF résumé download**. Skill badges link to official documentation.
+Developer portfolio with a real 3D scene (Three.js via **@react-three/fiber**/**@react-three/drei**), light/dark theme toggle, mobile menu, project cards, education/experience sections and a **one-click PDF résumé download**. Skill badges link to official documentation.
 
 ## Features
 - Animated Three.js scene (icosahedron + starfield)
 - Light/Dark theme (Tailwind class strategy)
 - Mobile hamburger menu, accessible and responsive
 - Projects, Skills (each badge opens official docs), Experience, Education, Achievements, Leadership, Contact
-- Résumé download saves a real **`.pdf`** (no browser viewer page)
-- Clean TypeScript types; Vite HMR
+- Resume download saves a real **`.pdf`** (no browser viewer page)
+- Clean TypeScript types and Vite HMR
 
 ## Tech Stack
 React 18 · TypeScript · Vite 5 · Tailwind CSS 3 · Three.js · @react-three/fiber · @react-three/drei · framer-motion · lucide-react
@@ -25,6 +25,8 @@ React 18 · TypeScript · Vite 5 · Tailwind CSS 3 · Three.js · @react-three/f
 ```bash
 npm i
 npm run dev
+Open http://localhost:5173/
+
 ```
 
 ---
