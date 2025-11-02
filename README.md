@@ -51,7 +51,7 @@ npm run dev
 
 ## Configuration
 
-### 1) Résumé (PDF)
+### 1) Resume (PDF)
 - Put your file at: `public/Unique_Patel_Resume.pdf` (exact casing).
 - Locally it’s served at `/Unique_Patel_Resume.pdf`.
 - The code uses `import.meta.env.BASE_URL`, so it also works on GitHub Pages.
@@ -174,27 +174,6 @@ if (Test-Path .\\node_modules) { Remove-Item -Recurse -Force .\\node_modules }
 if (Test-Path .\\package-lock.json) { Remove-Item -Force .\\package-lock.json }
 npm cache verify
 npm i
-```
-
----
-
-## Troubleshooting
-
-- **`Property 'env' does not exist on type 'ImportMeta'`**  
-  Add `src/vite-env.d.ts` with `/// <reference types="vite/client" />` (and ensure `"types": ["vite/client"]` in `tsconfig.json`).
-
-- **Vite looks for `/src/main.jsx`**  
-  Update `index.html` to load `/src/main.tsx`.
-
-- **PostCSS/Tailwind error about `@tailwindcss/postcss`**  
-  You’re on Tailwind v3—keep `postcss.config.js` as `{ tailwindcss: {}, autoprefixer: {} }`.
-
-- **ERESOLVE peer-deps conflict**  
-  Use the **Known-Good Dependency Set**, delete `node_modules` + `package-lock.json`, then `npm i`.
-
-- **Résumé downloads as `.htm`**  
-  Ensure the PDF exists at `public/Unique_Patel_Resume.pdf`. The app uses a fetch + `a.download` to save a real `.pdf`.
-
 ---
 
 ## Editing Content
